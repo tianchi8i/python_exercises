@@ -1,3 +1,7 @@
+'''
+This script uses for loop to find the youngest and oldest employees 
+in the dictionary of 'company' by setting minimum & min_key and maximum & max_key values.
+'''
 company = {"john": 99, "ben": 34, "kevin": 45, "janet": 20, "jack": 50, "jean": 87}
 
 minimum = 100

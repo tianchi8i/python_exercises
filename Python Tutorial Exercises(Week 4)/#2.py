@@ -1,3 +1,9 @@
+'''
+This script helps John Smith to add his wife Jane Sr (age 90) to his records.
+This script uses for loop, .items(), .update() to prints John Smith's attributes, 
+Jane Sr's attributes and all their combined children's attributes individually without 
+any repeated information, with children noting who their parent is, in the order of their age.
+'''
 john_smith = {
     "firstname": "john",
     "lastname": "smith",
