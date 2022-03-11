@@ -1,16 +1,14 @@
+'''
+Check if a given list y contains an odd number. 
+Iterate each element in the list using for loop and 
+check if num % 2 != 0. If the condition satisfies, 
+then print "List has an odd number" 
+otherwise print "List does not have an odd number".
+'''
 y = [4, 8, 2, 12, 7, 10]
-for o in y:
-    
-    if o %2 == 0:
-        pass
-    else:
-        print("List has an odd number")
 
-t = [2, 8, 10]
-for p in t:
-    
-    if p %2 == 0:
-        print("List does not have an odd number")
-        break
+for p in y:
+    if p %2 != 0:
+        print("List has an odd number")  
     else:
-        print("List has an odd number")
+        print("List does not have an odd number")
