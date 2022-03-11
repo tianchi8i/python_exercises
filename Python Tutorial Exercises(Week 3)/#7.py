@@ -1,3 +1,6 @@
+'''
+Solve Week 2 exercises using while loops instead of for loops
+'''
 #1
 x = [["this", "is", "a", "nested"], ["list", "that"], ["will", "be", "printed", "out"]]
 def nest_list(x):
@@ -6,16 +9,13 @@ def nest_list(x):
     z = 0
     
     while z < len(x):
-        
         if isinstance(x[z], list):
+            new_list.extend(nest_list(x[z])) 
 
-            new_list.extend(nest_list(x[z]))
-            
         else:
-
             new_list.append(x[z])
-    
         z += 1
+
     return new_list
 
 i = 0
@@ -64,19 +64,3 @@ while(i < len(y)):
         print("List does not have an odd number")
         
     i += 1
-
-#5
-Ingredient_list = ["rice","cheese", "pasta", "tomato sauce", "broccoli"]
-m = 0
-while m in range(len(Ingredient_list)):
-    #print(m)
-    p = []
-    while p in range(m, len(Ingredient_list)):
-        print(p)
-        #p += m
-        p.append(m)
-        # if m == p:
-        #     continue
-        #print(Ingredient_list[m], "and", Ingredient_list[p])
-        
-    m += 1

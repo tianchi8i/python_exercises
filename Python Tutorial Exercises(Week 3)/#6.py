@@ -1,3 +1,14 @@
+'''
+This script uses both while loop and for loop to unwrap any nested list into a single list.
+
+This script accepts a nested list as an argument, then iterates over each element in that list. 
+For each element, it checks if its type is a list or not by using the function isinstance().
+
+If yes, then again calls the same function nest_list() with this element (list) to get a flat list out of it. 
+Then extends the main flat list with the returned flat list.
+
+Whereas, if the element is not a list then it adds that to the end of the list using flat_list.append().
+'''
 nested_list = ["this", "item", ["is", "a", ["a", "mess"], "needs", "to", ["be", "unwrapped"]], ["into", "a"], "single", ["item"]]
 #For loop
 def nest_list(nested_list):
@@ -23,13 +34,10 @@ def nest_list2(nested_list):
     z = 0
     
     while z < len(nested_list):
-        
         if isinstance(nested_list[z], list):
-
             flat_list2.extend(nest_list2(nested_list[z]))
             
         else:
-
             flat_list2.append(nested_list[z])
     
         z += 1
