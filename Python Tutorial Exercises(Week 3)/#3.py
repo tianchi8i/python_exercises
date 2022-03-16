@@ -8,10 +8,10 @@ the final amount he has saved once the goal has been reached.
 g = 1000
 week_number = 0
 total_number = 0
-s = input()
+s = input("Enter a number: ")
+
 while s != g:   
 
-    s = input("Enter a number: ")
     #Add one to the week_number list/container, every time Andrew enter a number
     week_number += 1
     #Add the input number to the total list/container

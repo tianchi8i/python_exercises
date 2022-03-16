@@ -7,10 +7,10 @@ def nest_list(x):
     
     new_list = []
     z = 0
-    
+    t = nest_list(x)
     while z < len(x):
         if isinstance(x[z], list):
-            new_list.extend(nest_list(x[z])) 
+            new_list.extend(t[z]) 
 
         else:
             new_list.append(x[z])
@@ -19,8 +19,8 @@ def nest_list(x):
     return new_list
 
 i = 0
-while i < len(nest_list(x)):
-    print(nest_list(x)[i])
+while i < len(t):
+    print(t[i])
     i += 1
 
 #2

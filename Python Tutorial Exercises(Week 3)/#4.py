@@ -11,7 +11,7 @@ by using a nested while loop.
 '''
 first_names  = ["Tianchi", "Ariel", "Patrick", "Andrew"]
 last_names = ["Jane", "Savill", "Yap", "Ma"]
-x = len(last_names)
+
 #for loop
 for v,b in zip(first_names,last_names[::-1]):
     print(v,b)
@@ -24,10 +24,9 @@ x = len(last_names) - 1
 y = len(first_names)
 z = 0
 
-while z < y:
+while z < y and x >= 0:
 
-    while x >= 0:
-        print(first_names[z],last_names[x])
-        
-        x -= 1
-        z += 1
+    print(first_names[z],last_names[x])
+    
+    x -= 1
+    z += 1
