@@ -4,7 +4,7 @@ in the dictionary of 'company' by setting minimum & min_key and maximum & max_ke
 '''
 company = {"john": 99, "ben": 34, "kevin": 45, "janet": 20, "jack": 50, "jean": 87}
 
-minimum = 100
+minimum = max(company.values())
 min_key = None 
 for z in company:
     if company[z] < minimum:

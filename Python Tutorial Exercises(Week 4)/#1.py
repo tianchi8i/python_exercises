@@ -16,9 +16,9 @@ john_smith = {
 
 john_smith.update(
         {'children': 
-            [{'firstname': 'john jr', 'lastname': 'smith', 'age': 9, 'favourite_fruit': 'apple'}, 
-            {'firstname': 'jane', 'lastname': 'smith', 'age': 6, 'favourite_fruit': 'orange'},
-            {'firstname': 'bob', 'lastname': 'smith', 'age': 1, 'favourite_fruit': 'banana'}]
+            [{'firstname': 'john jr', 'lastname': john_smith['lastname'], 'age': 9, 'favourite_fruit': 'apple'}, 
+            {'firstname': 'jane', 'lastname': john_smith['lastname'], 'age': 6, 'favourite_fruit': 'orange'},
+            {'firstname': 'bob', 'lastname': john_smith['lastname'], 'age': 1, 'favourite_fruit': 'banana'}]
         }
     )
 
