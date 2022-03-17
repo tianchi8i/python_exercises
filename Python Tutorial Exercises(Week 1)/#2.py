@@ -7,7 +7,7 @@
     x equal converted strings. 
     Add the x to the string container "ss" then print "ss".
 '''
-s = "Tianchi Ma"
+s = "Tianchi!@#Ma"
 ss = ""
 
 for i in s:
@@ -18,7 +18,7 @@ for i in s:
     elif i.isspace():
         x = " "
     else:
-        continue
+        x = i
     ss += x
 
 print(ss)
