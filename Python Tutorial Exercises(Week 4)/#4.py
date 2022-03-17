@@ -20,7 +20,11 @@ for i in pay_part_two:
         pay_part_one[i] += pay_part_two[i]
     else:
         pay_part_one[i] = pay_part_two[i]
-
+        
+# lambda signifies an anonymous function. 
+# In this case, this function takes the single argument item and returns item[1], item = .items() and [0] = keys & [1] = values.
+# We want the results to be sorted numerically by value, so we use item[1] in here.
+# Because we want the output sorted by the highest paying to lowest so we use reverse function in here.
 sorted_result = sorted(pay_part_one.items(),key=lambda item: item[1], reverse=True)
 result = dict(sorted_result)
 print(result)
