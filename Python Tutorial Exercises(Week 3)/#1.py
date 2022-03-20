@@ -5,15 +5,15 @@ for example, 3! = 3 x 2 x 1 = 6.
 This script includes a while loop and a for loop.
 '''
 n = 5
-x = 1
+factorial = 1
 #1 for loop
 for i in range(1, n+1):
-    x=x*i
-print(x)
+    factorial=factorial*i
+print(factorial)
 
 #1 while loop
 
 while n > 0:
-    x = x * n
+    factorial = factorial * n
     n = n - 1
-print(x)
+print(factorial)

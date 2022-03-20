@@ -21,43 +21,43 @@ while nested_list_one < len(x):
     nested_list_one += 1
 
 #2
-c = 6
-d = 1
+list_one = 6
+list_two = 1
 
-while d<c+1:
-    q=1
-    while q <= d:
-        print(c, end="")
-        q+=1
-    d+=1
+while list_two<list_one+1:
+    number = 1
+    while number <= list_two:
+        print(list_one, end="")
+        number += 1
+    list_two += 1
     print(" ")
 
 #3
-x = 4
-z = 1
-while z <= x:
+range1 = 4
+range2 = 1
+while range2 <= range1:
     
-    j = 0
-    while j < x-z:
+    number1 = 0
+    while number1 < range1 - range2:
         print("*",end=' ')
-        j += 1
+        number1 += 1
         
-    k = 0
-    while k < z:
-        print(z, end=' ')
-        k += 1
-    z += 1
+    number2 = 0
+    while number2 < range2:
+        print(range2, end=' ')
+        number2 += 1
+    range2 += 1
     print()
 
 #4
-y = [4, 8, 2, 12, 7, 10]
-i = 0
+list1 = [4, 8, 2, 12, 7, 10]
+item = 0
 
-while(i < len(y)):
+while(item < len(list1)):
 
-    if y[i] % 2 != 0:
+    if list1[item] % 2 != 0:
         print("List has an odd number")
     else:
         print("List does not have an odd number")
         
-    i += 1
+    item += 1

@@ -9,30 +9,29 @@ Use the for/while loop and 'i'/'x' to list all the items in the given list 'list
 '''
 
 list_of_names = ["John", "Emmanuel", "Addie", "Karen", "Rickey", "Nadine"]
-z =[]
+new_list =[]
 for i in list_of_names:
     if len(i)<=5:
-
-        x = [i,'TROLL']   
+        new_item = [i,'TROLL']   
     else:
-        x = [i]
-    z.extend(x)
-print(z)
+        new_item = [i]
+    new_list.extend(new_item)
+print(new_list)
 
 #while loop 
 list_of_names = ["John", "Emmanuel", "Addie", "Karen", "Rickey", "Nadine"]
 x = 0
-z = []
+new_list = []
 
 while x < len(list_of_names):
 
     #get character numbers for each name
     if len(list_of_names[x]) <= 5:
         #print out the number that's less and smaller than 5 characters
-        y = [list_of_names[x], 'TROLL']
+        new_item = [list_of_names[x], 'TROLL']
     else:
-        y = [list_of_names[x]]
-    z.extend(y)
+        new_item = [list_of_names[x]]
+    new_list.extend(new_item)
     x += 1
 
-print(z)
+print(new_list)
