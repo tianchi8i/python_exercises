@@ -7,7 +7,7 @@ Create a new list 'z' to store the values we find from the inner loop.
 '''
 x = 20
 y = 47
-new_list = []
+prime_number_list = []
 u = x
 
 # for loop
@@ -16,8 +16,8 @@ for i in range(x,y+1):
         if i%a == 0:
             break
     else:
-        new_list.append(i)
-print(new_list)
+        prime_number_list.append(i)
+print(prime_number_list)
 
 #while loop
 # set range
@@ -43,10 +43,10 @@ while u >= x and u <= y:
         q += 1
     #check the count number
     if count == 0:
-        z.append(u)
+        prime_number_list.append(u)
     u += 1
 #printing the prime numbers between x and y
-print(new_list)
+print(prime_number_list)
 
 Min = 20
 Max = 47
@@ -74,4 +74,3 @@ while i >= Min and i <= Max:
     i += 1
 
 print(prime_numbers)
-
