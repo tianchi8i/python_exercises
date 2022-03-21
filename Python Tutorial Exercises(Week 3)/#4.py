@@ -21,8 +21,9 @@ for first_name,last_name in zip(first_names,last_names[::-1]):
 first_names  = ["Tianchi", "Ariel", "Patrick", "Andrew"]
 last_names = ["Jane", "Savill", "Yap", "Ma"]
 
-reversed_last_names = list(reversed(last_names))
-number = 0
-while number != len(first_names):
-        print(first_names[number], reversed_last_names[number])
-        number += 1
+first_names_number = 0
+reversed_last_names_number = len(last_names) - 1 
+while first_names_number != len(first_names) and reversed_last_names_number >= 0:
+        print(first_names[first_names_number], last_names[reversed_last_names_number])
+        first_names_number += 1
+        reversed_last_names_number -= 1

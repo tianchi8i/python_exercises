@@ -1,5 +1,5 @@
 '''
-This script takes an inputs number 's' and stores the number to the 'total_number' list 
+This script takes an input number 's' and stores the number to the variable name called 'total_number'. 
 and adds a number to the 'week_number' list to count the weeks. When the 'total_number' 
 is greater than the goal then print the number of weeks that have passed and 
 the final amount he has saved once the goal has been reached.

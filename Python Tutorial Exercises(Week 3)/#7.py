@@ -3,50 +3,45 @@ Solve Week 2 exercises using while loops instead of for loops
 '''
 #1
 x = [["this", "is", "a", "nested"], ["list", "that"], ["will", "be", "printed", "out"]]
-#                0                         1                         2
-nested_list_one = 0
-nested_list_two = 0
-#len(x)=3 and nested_list_one will never greater than 3 becuse there only 3 list in the x list[0,1,2]. So we use '<' in here.
-while nested_list_one < len(x):
-    #nested_list_two = [ [0,1,2,3], [0,1], [0,1,2,3]  ] . 
-    #len(x[nested_list_one]) = 4444(nested list 1 have 4 items and so on),22,4444.
-    #nested_list_two will never greater than nested_list_one, so use '<' in here.
-    while nested_list_two < len(x[nested_list_one]):
-        print(x[nested_list_one][nested_list_two])
-        nested_list_two += 1
-        #reset loop [1,2,3,4] &[4,4,4,4] if 4 == 4 reset list two and break.
-        if nested_list_two == len(x[nested_list_one]):
-            nested_list_two = 0
-            break
-    nested_list_one += 1
+
+total_lists = len(x)
+nested_list_number = 0
+while nested_list_number < total_lists:
+    items = 0
+    while items < len(x[nested_list_number]):
+        print(x[nested_list_number][items])
+
+        items += 1
+    nested_list_number += 1
+
 
 #2
-list_one = 6
-list_two = 1
+range_max = 6
+range_min = 1
 
-while list_two<list_one+1:
+while range_min<range_max+1:
     number = 1
-    while number <= list_two:
-        print(list_one, end="")
+    while number <= range_min:
+        print(range_max, end="")
         number += 1
-    list_two += 1
+    range_min += 1
     print(" ")
 
 #3
-range1 = 4
-range2 = 1
-while range2 <= range1:
+rangeMin = 4
+rangeMax = 1
+while rangeMax <= rangeMin:
     
     number1 = 0
-    while number1 < range1 - range2:
+    while number1 < rangeMin - rangeMax:
         print("*",end=' ')
         number1 += 1
         
     number2 = 0
-    while number2 < range2:
-        print(range2, end=' ')
+    while number2 < rangeMax:
+        print(rangeMax, end=' ')
         number2 += 1
-    range2 += 1
+    rangeMax += 1
     print()
 
 #4
