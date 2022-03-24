@@ -9,12 +9,6 @@ Use zip to make those two list into one list then use dict convert the list to a
 '''
 
 names = ["Raphael", "Tanya", "Miriam", "Leonard", "Owen", "Julie", "Haleema", "Mabel", "Stanley"]
-#find the name that is less than 7 characters 
-name_list = [i for i in names if len(i) < 7]
-#find the name characters that is less than 7
-number_list = [len(i) for i in names if len(i) < 7]
-# zip 2 lists together then convert then to a dictionary
-print(dict(zip(name_list, number_list)))
 
-# List comprehension in one line code
-print(dict(zip([i for i in names if len(i) < 7], [len(i) for i in names if len(i) < 7])))
+name_list = {i : len(i) for i in names if len(i) < 7}
+print(name_list)
