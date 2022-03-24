@@ -7,7 +7,7 @@ print("\n".join([str(v * v) for v in range(n + 1) if v != 4]))
 # print([v for v in range(n + 1) if v != 4 and pw(v*v)])
 
 #week 1.2
-s = "Jian!@&%#Jun"
+s = "Tianchi!@&%#Ma"
 ss = ""
 print("".join([i.upper() if i.islower() else i.lower() if i.isupper() else i for i in s]))
 
