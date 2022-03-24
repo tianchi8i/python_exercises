@@ -19,19 +19,19 @@ for i in range(x,y+1):
         prime_number_list.append(i)
 print(prime_number_list)
 
+# while loop
 Min = 20
 Max = 47
 i = Min
 prime_numbers = []
 
 while i >= Min and i <= Max:
-    j = 2
-    while j < i:
-        if i % j == 0:
+    checking_number = 2
+    while checking_number <= i//2:
+        if i % checking_number == 0:
             break
-        else:
-            if j+1 == i:
-                prime_numbers.append(i)
-        j += 1
+        checking_number += 1
+    else:
+        prime_numbers.append(i)
     i += 1
 print(prime_numbers)
