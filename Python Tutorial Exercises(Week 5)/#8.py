@@ -1,14 +1,9 @@
 #week 1.1
 n = 5
 print("\n".join([str(v * v) for v in range(n + 1) if v != 4]))
-# def pw(w):
-#     print(w)
-#     return True
-# print([v for v in range(n + 1) if v != 4 and pw(v*v)])
 
 #week 1.2
 s = "Tianchi!@&%#Ma"
-ss = ""
 print("".join([i.upper() if i.islower() else i.lower() if i.isupper() else i for i in s]))
 
 #week 1.3
@@ -43,18 +38,17 @@ print("\n".join([((b - i) * "* " + str(i) + ((i - 1) * f" {i}")) for i in range(
 
 # week2.4
 y = [4, 8, 2, 12, 7, 10]
-word1 = "List has an odd number"
-word2 = "List does not have an odd number"
+odd_number = "List has an odd number"
+non_odd_number = "List does not have an odd number"
 
-odd_number = [i if i % 2 != 0 else word1 for i in y]
-print("\n".join([i if i == word1 else word2 for i in odd_number]))
+print("\n".join([i if i == odd_number else non_odd_number for i in [i if i % 2 != 0 else odd_number for i in y]]))
 
 
 # week 2.5
 Ingredient_list = ["rice", "cheese", "pasta", "tomato sauce", "broccoli"]
 
-i = [str(f"{Ingredient_list[i]} and {Ingredient_list[n]}") for i in range(0, len(Ingredient_list)) for n in range(i, len(Ingredient_list)) if i != n]
-print("\n".join(i))
+dinner_list = [str(f"{Ingredient_list[i]} and {Ingredient_list[n]}") for i in range(0, len(Ingredient_list)) for n in range(i, len(Ingredient_list)) if i != n]
+print("\n".join(dinner_list))
 
 # week 3.1
 n = 5
@@ -70,6 +64,7 @@ non_prime_numbers = set([i for i in range(x, y + 1) for a in range(2, i) if i % 
 prime_numbers = list(every_number - non_prime_numbers)
 prime_numbers.sort(reverse=False)
 print(prime_numbers)
+
 # week3.3
 #can't use while loop in list comprehension
 
@@ -78,3 +73,13 @@ first_names  = ["Tianchi", "Ariel", "Patrick", "Andrew"]
 last_names = ["Jane", "Savill", "Yap", "Ma"]
 print("\n".join([' '.join(x) for x in zip(first_names,last_names[::-1])]))
 
+# week 3.5
+list_of_names = ["John", "Emmanuel", "Addie", "Karen", "Rickey", "Nadine"]
+flat_list = [y for x in [[i,'TROLL'] if len(i) <= 5 else i for i in list_of_names ] for y in (x if isinstance(x,list) else [x])]
+print(flat_list)
+
+# week3.6
+nested_list = ["this", "item", ["is", "a", ["a", "mess"], "needs", "to", ["be", "unwrapped"]], ["into", "a"], "single", ["item"]]
+nested_list_one = [lvl_one for big_list in nested_list for lvl_one in (big_list if isinstance(big_list, list) else [big_list])]
+flat_list_one = [lvl_two for items_two in nested_list_one for lvl_two in (items_two if isinstance(items_two, list) else [items_two])]
+print(flat_list_one)
