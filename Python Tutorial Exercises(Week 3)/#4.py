@@ -27,11 +27,3 @@ while current_index < len(first_names):
     print(first_names[current_index],
           last_names[-1 - current_index])
     current_index += 1
-
-# first_names_number = 0
-# reversed_last_names_number = len(last_names) - 1 
-# while first_names_number != len(first_names) and reversed_last_names_number >= 0:
-#         print(first_names[first_names_number], last_names[reversed_last_names_number])
-#         first_names_number += 1
-#         reversed_last_names_number -= 1
-        
