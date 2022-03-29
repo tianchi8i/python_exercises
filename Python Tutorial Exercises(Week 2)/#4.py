@@ -8,7 +8,8 @@ otherwise print "List does not have an odd number".
 y = [4, 8, 2, 12, 7, 10]
 
 for p in y:
-    if p %2 != 0:
-        print("List has an odd number")  
-    else:
-        print("List does not have an odd number")
+   if p % 2 != 0:
+      print("List has an odd number")
+      break
+else:
+   print("List does not have an odd number")
