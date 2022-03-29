@@ -1,7 +1,6 @@
 '''
 The total number of each car is obtained by adding the values of x, y, and z. (x[0]+y[0]+z[0]... and so on)
 Zip cars list and total_number list together
-convert list to a dictionary by using .dict()
 print the final dictionary at the end
 '''
 cars = ["Hyundai Kona", "Kia Soul", "Mazda CX-30", "Volkswagen Taos", "BMW X1", "BMW X2"]

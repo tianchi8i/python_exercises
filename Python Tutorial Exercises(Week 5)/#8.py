@@ -41,7 +41,7 @@ y = [4, 8, 2, 12, 7, 10]
 odd_number = "List has an odd number"
 non_odd_number = "List does not have an odd number"
 
-print("\n".join([i if i == odd_number else non_odd_number for i in [i if i % 2 != 0 else odd_number for i in y]]))
+print([non_odd_number if len([ i for i in y if i % 2 != 0 ]) == 0 else odd_number])
 
 
 # week 2.5

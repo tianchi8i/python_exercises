@@ -1,6 +1,5 @@
 '''
-First use dictionary comprehension to recreate the dictionary below, then 
-use dictionary comprehension to swap the key values using dictionary comprehension.
+Use dictionary comprehension to swap the key values using dictionary comprehension.
 Use key and val and .items() to find the keys and the values first.
 Create a new list then place the value first then the key second then 
 convert the list to a dictionary by using .dict().
