@@ -1,8 +1,8 @@
 '''
-Take a list of names and convert it to a dictionary with the key 
-being the name and the value being the length of the name, 
+Take a list of names and convert it to a dictionary with the key being the name 
+and the value being the length of the name, 
 removing any name that has 7 characters or more.
-Use for loop to find the name that is less than 7 characters, 
+Use dictionary comprehension to find the name that is less than 7 characters, 
 if len(i) < 7 add them to the dictionary called name_dictionary.
 print name_dictionary at the end.
 '''
