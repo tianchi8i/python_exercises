@@ -1,7 +1,7 @@
 '''
 Extract all numbers from a string text and print the sum of it using list comprehension. 
 use for loop and .split() to split the string.
-use if s.rstrip(",.").isdigit() to remove the remove commas and full stops from the string and find all the number that is in the string by using .isdigit().
+use if s.rstrip(",.") to remove the remove commas and full stops from the string and find all the number that is in the string by using .isdigit().
 use sum to add the Number list:[2018, 1000000, 2019, 5, 2020, 2] all together 
 then print the total number out.
 '''
